@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="centered">
+      <h1>Welcome!</h1>
+      <a href="{{ url_for('.authorize') }}">
+      <div class="access">
+        <img
+          align="left"
+          class="logo"
+          src="/static/img/drive.png"
+        />
+        <div class="allow">
+          <h2>Allow access to Google Drive</h2>
+        </div>
+      </div>
+    </a>
+    </div>
+  </body>
+</html>

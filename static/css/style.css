@@ -1,0 +1,74 @@
+* {
+	padding: 0; margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1{
+  color: #EC3A48;
+}
+
+h2 {
+  font-size: 18px;
+  color: #546E7A;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea, input {
+  font-size: 16px;
+  padding: 8px;
+}
+
+ol {
+  font-size: 17px;
+}
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo {
+  width: 50px;
+}
+
+.access {
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  margin: 50px 20px 0 20px;
+  padding: 10px;
+  height: 50px;
+}
+
+.allow {
+  padding-left: 70px;
+  padding-top: 13px;
+}
+
+.item {
+	float: left;
+	width: 48%;
+  margin-left: 1%;
+  margin-top: 25px;
+}
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}

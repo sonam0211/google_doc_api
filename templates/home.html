@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <div class='item'>
+        <form method="post" action="/home">
+          <textarea name="textdata" rows="18" cols="55" required></textarea>
+          <br />
+          <input placeholder="Filename" name="name" required></input>
+          <button class="button" type="submit" name="submit" value="submit">Save</button>
+        </form>
+      </div>
+    </div>
+    <div class="item">
+      <a href="{{ url_for('.clear') }}">
+        <button class="button">
+          Clear session
+        </button>
+      </a>
+      <ol>
+        List of Uploaded files via app
+        {% for item in items %}
+          <li>
+            <a
+              target="_blank"
+              href="https://docs.google.com/document/d/{{ item.id }}"
+            >
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </body>
+</html>
